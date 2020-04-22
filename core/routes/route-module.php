@@ -78,7 +78,7 @@ class ModuleRoute extends Route {
 	}
 
 	public function ShowResult($content) {
-		$this->MODULE->Render($content, __ROOT_DIR.'/public/templates/appstemplate.phtml');
+		$this->MODULE->Render($content, __ROOT_DIR . '/public/templates/' . __APPTEMPLATE);
 	}
 
 	public function ShowError($ex) {

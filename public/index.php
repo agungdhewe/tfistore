@@ -77,6 +77,17 @@ define('__APPNAME', $FGTA_APP_NAME);
 
 
 
+$FGTA_APP_TEMPLATE = 'appstemplate.phtml';
+$ENV_FGTA_APP_TEMPLATE=getenv('FGTA_APP_TEMPLATE');
+if ($ENV_FGTA_APP_TEMPLATE != '') {
+	$FGTA_APP_TEMPLATE = $ENV_FGTA_APP_TEMPLATE;
+}
+define('__APPTEMPLATE', $FGTA_APP_TEMPLATE);
+
+
+
+
+
 require_once $FGTA_DBCONF_PATH;
 require_once __ROOT_DIR.'/core/webauth.php';
 require_once __ROOT_DIR.'/core/webmoduleconfig.php';
