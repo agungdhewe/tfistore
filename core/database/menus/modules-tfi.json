@@ -1,0 +1,87 @@
+{
+	"title": "home *****",
+	"modules": [
+		{
+			"title" : "Administrator",
+			"disabled" : false,
+			"modules" : [
+				"fgta/framework/fggroup",
+				"fgta/framework/fguser"				
+			]
+		},
+
+		{
+			"title" : "Enterprise",
+			"disabled" : false,
+			"modules" : [
+				{
+					"title" : "General",
+					"disabled" : false,
+					"modules" : [
+						"ent/general/curr",
+						"ent/general/country",
+						"ent/general/bank"
+					]
+				},
+
+				{
+					"title" : "Affiliation",
+					"disabled" : false,
+					"modules" : [
+						"ent/affiliation/partnertype",
+						"ent/affiliation/partnerorg",
+						"ent/affiliation/partner"						
+					]
+				},
+
+				{
+					"title" : "Organisation",
+					"disabled" : false,
+					"modules" : [
+						"ent/organisation/unitgroup",
+						"ent/organisation/unit",
+						"ent/organisation/depttype",
+						"ent/organisation/deptgroup",
+						"ent/organisation/deptauth",
+						"ent/organisation/dept"
+					]
+				}
+
+			]
+		},
+
+		{
+			"title" : "Retail",
+			"disabled" : false,
+			"modules" : [
+				{
+					"title" : "Inventory",
+					"disabled" : false,
+					"modules" : [
+						"retail/inv/seagroup",
+						"retail/inv/sea"
+					]					
+				},
+				{
+					"title" : "Inventory Report",
+					"disabled" : false,
+					"modules" : [
+						"retail/invrpt/invart"
+					]					
+				},
+				{
+					"title" : "Sales Report",
+					"disabled" : false,
+					"modules" : [
+						"retail/slrpt/byloc"
+					]					
+				}
+
+				
+			]
+		}
+
+
+
+	]
+}

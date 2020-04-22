@@ -1,0 +1,74 @@
+{
+	"title": "home",
+	"modules": [
+		"etap/client/config",
+		"fgta/framework/formdevjurn",
+		"fgta/framework/formgenjurn",
+		"retail/inv/arpt",
+
+		{
+			"title" : "Autority",
+			"disabled" : false,
+			"modules" : [
+				"fgta/framework/fggroup",
+				"fgta/framework/fguser"			
+			]
+		},
+
+		{
+			"title" : "Master",
+			"disabled" : false,
+			"modules" : [
+				"ent/mst/city",
+				"ent/mst/location",
+				"ent/mst/sitemodel",
+				"ent/mst/site",
+				"ent/mst/deptauth",
+				"ent/mst/deptmodel",
+				"ent/mst/deptgroup",
+				"ent/mst/dept",
+				"ent/mst/partnertype",
+				"ent/mst/partner",
+				"ent/mst/unit",
+				"ent/mst/brand"	,
+				"ent/mst/curr"			
+			]
+		},
+
+
+		{
+			"title" : "Inventory",
+			"disabled" : false,
+			"modules" : [
+				"retail/inv/sea",
+				"retail/inv/bcg",
+				"retail/inv/gro",
+				"retail/inv/ctg"	
+			]
+		},
+
+		{
+			"title" : "Logistic",
+			"disabled" : false,
+			"backcolor" : "orange",
+			"modules" : [
+				{
+					"title" : "Config",
+					"disabled" : false,
+					"backcolor" : "brown",
+					"modules" : [
+						"retail/log/shipcostsrc",
+						"retail/log/shipcostcomp",
+						"retail/log/shipmethod",
+						"retail/log/shipterm"				
+					]
+				},
+
+
+				"retail/log/ship"
+
+			]
+		}
+
+	]
+}
