@@ -89,12 +89,35 @@ if (!defined('FGTA4')) {
 		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>		 -->
 		<script src="jslibs/jquery.min.js"></script>
 
+
+		<style>
+			.onlinestore-topbar {
+				background-color: #000; 
+				padding: 10px; text-align: center;
+				margin-bottom: 30px;
+			}
+
+			.onlinestore-bottombar {
+				color: #fff;
+				background-color: #000; 
+				padding: 10px; text-align: center; 
+				margin-top: 50px;
+			}
+
+		</style>	
+
 	</head>
 
 
-	<body>
+	<body style="height: 100%;">
 		<div id="loadwaitmask"><div id="loaderwrap"><div id="loadwaitimg"></div></div></div>
 		
+
+
+		<div id="tpl-topbar" class="onlinestore-topbar">
+			<img src="images/transfashion-logo-white.svg">
+		</div>
+
 		<?php require_once $this->reqinfo->moduleviewpath ?>
 
 
@@ -103,6 +126,29 @@ if (!defined('FGTA4')) {
 			<div id="fgta_output_content"></div>
 			<div id="fgta_output_error"></div>
 		</div>
+
+
+		<div id="tpl-bottombar" class="onlinestore-bottombar">
+			<b>Address</b> :<br><br>
+			Menara Mega Syariah 18 Floor<br>
+			Jl. H.R. Rasuna Said Kav 19A,<br>
+			Jakarta Selatan, 12950<br>
+			Telp: +62 21 2985 2112<br>
+			Fax: +62 21 2985 2115<br>
+
+			<div style="display:flex; flex-direction: row; justify-content: center; margin-top: 20px">
+				<div>
+					<a href="https://www.facebook.com/transfashionindonesia.ctcorp/"><img src="images/custom_iconfacebook_skin.png" width="30" height="30" style="margin-right: 10px;" border="0"></a>
+				</div>
+				<div>
+					<a href="https://www.instagram.com/transfashionindonesia/?hl=en"><img src="images/custom_iconinstagram_skin.png" width="30" height="30" border="0"></a>
+				</div>
+
+			</div>
+		</div>
+		
+
+		
 	</body>
 
 
