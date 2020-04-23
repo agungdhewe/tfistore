@@ -9,7 +9,8 @@ class Etalase extends WebModule {
 		// 	'./jslibs/pouchdb.find.min.js'
 		// ];
 
-		$this->title = $this->title . ' - Trans Fashion Indonesia';
+		$this->title = "Etalase" . ' - ' . $this->configuration->basetitle;
+
 	}
 }
 
