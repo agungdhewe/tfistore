@@ -85,7 +85,7 @@ if (!defined('FGTA4')) {
 
 
 		<script src="jslibs/cookie.js"></script>	
-		<script src="jslibs/preventback.js"></script>	
+		<!-- <script src="jslibs/preventback.js"></script>	 -->
 		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>		 -->
 		<script src="jslibs/jquery.min.js"></script>
 
@@ -115,7 +115,9 @@ if (!defined('FGTA4')) {
 
 
 		<div id="tpl-topbar" class="onlinestore-topbar">
-			<img src="images/transfashion-logo-white.svg">
+			<a href="">
+				<img src="images/transfashion-logo-white.svg" style="border: 0px">
+			</a>
 		</div>
 
 		<?php require_once $this->reqinfo->moduleviewpath ?>
@@ -218,7 +220,7 @@ if (!defined('FGTA4')) {
 					$('#__progresswaitmask__').css('top', $(this).scrollTop() + "px");
 				});
 
-				window.preventBackButton();
+				// window.preventBackButton();
 				window.preparemodule(() => {
 					let loadwaitmask = document.getElementById('loadwaitmask')
 					if (loadwaitmask!==null) {

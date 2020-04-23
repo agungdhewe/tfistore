@@ -24,9 +24,27 @@ class Route {
 		$reqinfo->appsgroup = $reqs[1];
 		$reqinfo->appsname = $reqs[2];
 		$reqinfo->modulename = $reqs[3];
+
+		$mmm = $reqinfo->modulename;
+		$emm = substr($reqinfo->modulename, -5);
+		$rmm =  substr($reqinfo->modulename, 0, strlen($reqinfo->modulename)-5);
+
+		if ($emm=='.html') {
+			$reqinfo->modulename = $rmm;
+		}
+
 		$reqinfo->modulefullname = "$reqinfo->appsgroup/$reqinfo->appsname/$reqinfo->modulename";
 		$reqinfo->modulerequest = "/$reqinfo->routeswitch/$reqinfo->appsgroup/$reqinfo->appsname/$reqinfo->modulename";
 		$reqinfo->modulerequestinfo = ltrim(str_replace($reqinfo->modulerequest,  '', $_SERVER['PATH_INFO']), '/');
+
+		if ($emm=='.html') {
+			$reqinfo->modulequery = ltrim(str_replace('.html', '', $reqinfo->modulerequestinfo), '/');
+			$reqinfo->modulerequestinfo = '';
+		} else {
+			$reqinfo->modulerequestinfo = ltrim(str_replace($reqinfo->modulerequest,  '', $_SERVER['PATH_INFO']), '/');
+			$reqinfo->modulequery =  $reqinfo->modulerequestinfo;
+		}	
+
 		$reqinfo->moduledir = __ROOT_DIR . "/apps/$reqinfo->appsgroup/$reqinfo->appsname/$reqinfo->modulename";
 		$reqinfo->moduleconfigpath = "$reqinfo->moduledir/$reqinfo->modulename.json";
 		$reqinfo->pathinfo = $_SERVER['PATH_INFO'];

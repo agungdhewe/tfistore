@@ -10,8 +10,18 @@
 
 
 .brandbox {
-	border: 1px solid #000;
 	width: 100px;
 	height: 100px;
 	margin: 7px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	color: #fff;
+	background-color: darkblue;
+	cursor: pointer;
+}
+
+.brandbox:hover {
+	background-color: red;
 }
