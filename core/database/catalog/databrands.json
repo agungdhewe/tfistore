@@ -1,0 +1,18 @@
+{
+	"eag" : {
+		"name" : "Aigner",
+		"categories" : [
+			{"id":"SHOES", "text":"SHOES"},
+			{"id":"BAGS", "text":"BAGS"},
+			{"id":"SLG", "text":"SLG"}
+		]
+	},
+
+	"hbs" : {
+		"name" : "Hugo Boss",
+		"categories" : [
+			{"id":"SHOES", "text":"SHOES"},
+			{"id":"SUIT", "text":"SUIT"}
+		]
+	}	
+}

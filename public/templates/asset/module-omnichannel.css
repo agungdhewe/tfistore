@@ -1,0 +1,21 @@
+/* Style untuk omnichannel */
+
+
+.onlinestore-topbar {
+	background-color: #000; 
+	padding: 10px; text-align: center;
+	margin-bottom: 20px;
+}
+
+.onlinestore-bottombar {
+	color: #fff;
+	background-color: #000; 
+	padding: 10px; text-align: center; 
+	margin-top: 50px;
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}

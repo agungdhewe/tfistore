@@ -1,14 +1,4 @@
 
-
-
-.container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	background-color: #fff;
-}
-
-
 .brandbox {
 	width: 100px;
 	height: 100px;
@@ -24,4 +14,8 @@
 
 .brandbox:hover {
 	background-color: red;
+}
+
+.mnu-etalase {
+	margin-top: 50px;
 }

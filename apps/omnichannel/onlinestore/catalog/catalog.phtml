@@ -1,1 +1,30 @@
-test catalog
+<div class="brand-catalog-header">
+	
+	<div class="brand-catalog-header-side">&nbsp;</div>
+	
+	<div class="brand-logo-container">
+		<img src="images/logo-hbs.png" height="40px">
+	</div>
+
+	<div class="brand-catalog-header-side userinfo">
+		<div class="userinfo-button" onclick="javascript:$ui.btn_login_click()">Login</div>
+		<div class="userinfo-button" onclick="javascript:$ui.btn_register_click()">Register</div>
+	</div>
+
+</div>
+
+<div class="brand-menu">
+		<?php foreach ($this->categories as $ctg) { ?>
+		<div class="brand-menu-item" onclick=""><?=$ctg['text']?></div>
+		<?php } ?>	
+</div>
+
+
+
+
+<div class="content catalog-container">
+	<div class="catalog-highligt-item">
+			hightlight item 1
+	</div>
+
+</div>
